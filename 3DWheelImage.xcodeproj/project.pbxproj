@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BDF5A2C1E6A6C0A00B3068A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF5A2B1E6A6C0A00B3068A /* main.m */; };
+		7BDF5A2F1E6A6C0A00B3068A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF5A2E1E6A6C0A00B3068A /* AppDelegate.m */; };
+		7BDF5A321E6A6C0A00B3068A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF5A311E6A6C0A00B3068A /* ViewController.m */; };
+		7BDF5A351E6A6C0A00B3068A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF5A331E6A6C0A00B3068A /* Main.storyboard */; };
+		7BDF5A371E6A6C0A00B3068A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF5A361E6A6C0A00B3068A /* Assets.xcassets */; };
+		7BDF5A3A1E6A6C0A00B3068A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BDF5A381E6A6C0A00B3068A /* LaunchScreen.storyboard */; };
+		7BDF5A451E6A6C0A00B3068A /* _DWheelImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF5A441E6A6C0A00B3068A /* _DWheelImageTests.m */; };
+		7BDF5A501E6A6C0A00B3068A /* _DWheelImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF5A4F1E6A6C0A00B3068A /* _DWheelImageUITests.m */; };
+		7BDF5A601E6A6CC100B3068A /* HL3DWheelImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF5A5F1E6A6CC100B3068A /* HL3DWheelImage.m */; };
+		7BDF5A6A1E6A7A6000B3068A /* HLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF5A691E6A7A6000B3068A /* HLImageView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BDF5A411E6A6C0A00B3068A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BDF5A1F1E6A6C0900B3068A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BDF5A261E6A6C0900B3068A;
+			remoteInfo = 3DWheelImage;
+		};
+		7BDF5A4C1E6A6C0A00B3068A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BDF5A1F1E6A6C0900B3068A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BDF5A261E6A6C0900B3068A;
+			remoteInfo = 3DWheelImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BDF5A271E6A6C0A00B3068A /* 3DWheelImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DWheelImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDF5A2B1E6A6C0A00B3068A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7BDF5A2D1E6A6C0A00B3068A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7BDF5A2E1E6A6C0A00B3068A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7BDF5A301E6A6C0A00B3068A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7BDF5A311E6A6C0A00B3068A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7BDF5A341E6A6C0A00B3068A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BDF5A361E6A6C0A00B3068A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BDF5A391E6A6C0A00B3068A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BDF5A3B1E6A6C0A00B3068A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BDF5A401E6A6C0A00B3068A /* 3DWheelImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DWheelImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDF5A441E6A6C0A00B3068A /* _DWheelImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _DWheelImageTests.m; sourceTree = "<group>"; };
+		7BDF5A461E6A6C0A00B3068A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BDF5A4B1E6A6C0A00B3068A /* 3DWheelImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 3DWheelImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BDF5A4F1E6A6C0A00B3068A /* _DWheelImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _DWheelImageUITests.m; sourceTree = "<group>"; };
+		7BDF5A511E6A6C0A00B3068A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BDF5A5E1E6A6CC100B3068A /* HL3DWheelImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HL3DWheelImage.h; sourceTree = "<group>"; };
+		7BDF5A5F1E6A6CC100B3068A /* HL3DWheelImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HL3DWheelImage.m; sourceTree = "<group>"; };
+		7BDF5A681E6A7A6000B3068A /* HLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLImageView.h; sourceTree = "<group>"; };
+		7BDF5A691E6A7A6000B3068A /* HLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLImageView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BDF5A241E6A6C0900B3068A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BDF5A3D1E6A6C0A00B3068A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BDF5A481E6A6C0A00B3068A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BDF5A1E1E6A6C0900B3068A = {
+			isa = PBXGroup;
+			children = (
+				7BDF5A291E6A6C0A00B3068A /* 3DWheelImage */,
+				7BDF5A431E6A6C0A00B3068A /* 3DWheelImageTests */,
+				7BDF5A4E1E6A6C0A00B3068A /* 3DWheelImageUITests */,
+				7BDF5A281E6A6C0A00B3068A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BDF5A281E6A6C0A00B3068A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF5A271E6A6C0A00B3068A /* 3DWheelImage.app */,
+				7BDF5A401E6A6C0A00B3068A /* 3DWheelImageTests.xctest */,
+				7BDF5A4B1E6A6C0A00B3068A /* 3DWheelImageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BDF5A291E6A6C0A00B3068A /* 3DWheelImage */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF5A2D1E6A6C0A00B3068A /* AppDelegate.h */,
+				7BDF5A2E1E6A6C0A00B3068A /* AppDelegate.m */,
+				7BDF5A301E6A6C0A00B3068A /* ViewController.h */,
+				7BDF5A311E6A6C0A00B3068A /* ViewController.m */,
+				7BDF5A5E1E6A6CC100B3068A /* HL3DWheelImage.h */,
+				7BDF5A5F1E6A6CC100B3068A /* HL3DWheelImage.m */,
+				7BDF5A681E6A7A6000B3068A /* HLImageView.h */,
+				7BDF5A691E6A7A6000B3068A /* HLImageView.m */,
+				7BDF5A331E6A6C0A00B3068A /* Main.storyboard */,
+				7BDF5A361E6A6C0A00B3068A /* Assets.xcassets */,
+				7BDF5A381E6A6C0A00B3068A /* LaunchScreen.storyboard */,
+				7BDF5A3B1E6A6C0A00B3068A /* Info.plist */,
+				7BDF5A2A1E6A6C0A00B3068A /* Supporting Files */,
+			);
+			path = 3DWheelImage;
+			sourceTree = "<group>";
+		};
+		7BDF5A2A1E6A6C0A00B3068A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF5A2B1E6A6C0A00B3068A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7BDF5A431E6A6C0A00B3068A /* 3DWheelImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF5A441E6A6C0A00B3068A /* _DWheelImageTests.m */,
+				7BDF5A461E6A6C0A00B3068A /* Info.plist */,
+			);
+			path = 3DWheelImageTests;
+			sourceTree = "<group>";
+		};
+		7BDF5A4E1E6A6C0A00B3068A /* 3DWheelImageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BDF5A4F1E6A6C0A00B3068A /* _DWheelImageUITests.m */,
+				7BDF5A511E6A6C0A00B3068A /* Info.plist */,
+			);
+			path = 3DWheelImageUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BDF5A261E6A6C0900B3068A /* 3DWheelImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BDF5A541E6A6C0A00B3068A /* Build configuration list for PBXNativeTarget "3DWheelImage" */;
+			buildPhases = (
+				7BDF5A231E6A6C0900B3068A /* Sources */,
+				7BDF5A241E6A6C0900B3068A /* Frameworks */,
+				7BDF5A251E6A6C0900B3068A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 3DWheelImage;
+			productName = 3DWheelImage;
+			productReference = 7BDF5A271E6A6C0A00B3068A /* 3DWheelImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BDF5A3F1E6A6C0A00B3068A /* 3DWheelImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BDF5A571E6A6C0A00B3068A /* Build configuration list for PBXNativeTarget "3DWheelImageTests" */;
+			buildPhases = (
+				7BDF5A3C1E6A6C0A00B3068A /* Sources */,
+				7BDF5A3D1E6A6C0A00B3068A /* Frameworks */,
+				7BDF5A3E1E6A6C0A00B3068A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BDF5A421E6A6C0A00B3068A /* PBXTargetDependency */,
+			);
+			name = 3DWheelImageTests;
+			productName = 3DWheelImageTests;
+			productReference = 7BDF5A401E6A6C0A00B3068A /* 3DWheelImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BDF5A4A1E6A6C0A00B3068A /* 3DWheelImageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BDF5A5A1E6A6C0A00B3068A /* Build configuration list for PBXNativeTarget "3DWheelImageUITests" */;
+			buildPhases = (
+				7BDF5A471E6A6C0A00B3068A /* Sources */,
+				7BDF5A481E6A6C0A00B3068A /* Frameworks */,
+				7BDF5A491E6A6C0A00B3068A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BDF5A4D1E6A6C0A00B3068A /* PBXTargetDependency */,
+			);
+			name = 3DWheelImageUITests;
+			productName = 3DWheelImageUITests;
+			productReference = 7BDF5A4B1E6A6C0A00B3068A /* 3DWheelImageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BDF5A1F1E6A6C0900B3068A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "花磊";
+				TargetAttributes = {
+					7BDF5A261E6A6C0900B3068A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TSXEZB8Z33;
+						ProvisioningStyle = Automatic;
+					};
+					7BDF5A3F1E6A6C0A00B3068A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TSXEZB8Z33;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7BDF5A261E6A6C0900B3068A;
+					};
+					7BDF5A4A1E6A6C0A00B3068A = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TSXEZB8Z33;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7BDF5A261E6A6C0900B3068A;
+					};
+				};
+			};
+			buildConfigurationList = 7BDF5A221E6A6C0900B3068A /* Build configuration list for PBXProject "3DWheelImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BDF5A1E1E6A6C0900B3068A;
+			productRefGroup = 7BDF5A281E6A6C0A00B3068A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BDF5A261E6A6C0900B3068A /* 3DWheelImage */,
+				7BDF5A3F1E6A6C0A00B3068A /* 3DWheelImageTests */,
+				7BDF5A4A1E6A6C0A00B3068A /* 3DWheelImageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BDF5A251E6A6C0900B3068A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BDF5A3A1E6A6C0A00B3068A /* LaunchScreen.storyboard in Resources */,
+				7BDF5A371E6A6C0A00B3068A /* Assets.xcassets in Resources */,
+				7BDF5A351E6A6C0A00B3068A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BDF5A3E1E6A6C0A00B3068A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BDF5A491E6A6C0A00B3068A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BDF5A231E6A6C0900B3068A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BDF5A6A1E6A7A6000B3068A /* HLImageView.m in Sources */,
+				7BDF5A321E6A6C0A00B3068A /* ViewController.m in Sources */,
+				7BDF5A2F1E6A6C0A00B3068A /* AppDelegate.m in Sources */,
+				7BDF5A601E6A6CC100B3068A /* HL3DWheelImage.m in Sources */,
+				7BDF5A2C1E6A6C0A00B3068A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BDF5A3C1E6A6C0A00B3068A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BDF5A451E6A6C0A00B3068A /* _DWheelImageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BDF5A471E6A6C0A00B3068A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BDF5A501E6A6C0A00B3068A /* _DWheelImageUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BDF5A421E6A6C0A00B3068A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BDF5A261E6A6C0900B3068A /* 3DWheelImage */;
+			targetProxy = 7BDF5A411E6A6C0A00B3068A /* PBXContainerItemProxy */;
+		};
+		7BDF5A4D1E6A6C0A00B3068A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BDF5A261E6A6C0900B3068A /* 3DWheelImage */;
+			targetProxy = 7BDF5A4C1E6A6C0A00B3068A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BDF5A331E6A6C0A00B3068A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BDF5A341E6A6C0A00B3068A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BDF5A381E6A6C0A00B3068A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BDF5A391E6A6C0A00B3068A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BDF5A521E6A6C0A00B3068A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7BDF5A531E6A6C0A00B3068A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BDF5A551E6A6C0A00B3068A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TSXEZB8Z33;
+				INFOPLIST_FILE = 3DWheelImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hualei.-DWheelImage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7BDF5A561E6A6C0A00B3068A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TSXEZB8Z33;
+				INFOPLIST_FILE = 3DWheelImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hualei.-DWheelImage";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7BDF5A581E6A6C0A00B3068A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TSXEZB8Z33;
+				INFOPLIST_FILE = 3DWheelImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hualei.-DWheelImageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3DWheelImage.app/3DWheelImage";
+			};
+			name = Debug;
+		};
+		7BDF5A591E6A6C0A00B3068A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TSXEZB8Z33;
+				INFOPLIST_FILE = 3DWheelImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hualei.-DWheelImageTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/3DWheelImage.app/3DWheelImage";
+			};
+			name = Release;
+		};
+		7BDF5A5B1E6A6C0A00B3068A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TSXEZB8Z33;
+				INFOPLIST_FILE = 3DWheelImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hualei.-DWheelImageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = 3DWheelImage;
+			};
+			name = Debug;
+		};
+		7BDF5A5C1E6A6C0A00B3068A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TSXEZB8Z33;
+				INFOPLIST_FILE = 3DWheelImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Hualei.-DWheelImageUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = 3DWheelImage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BDF5A221E6A6C0900B3068A /* Build configuration list for PBXProject "3DWheelImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BDF5A521E6A6C0A00B3068A /* Debug */,
+				7BDF5A531E6A6C0A00B3068A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BDF5A541E6A6C0A00B3068A /* Build configuration list for PBXNativeTarget "3DWheelImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BDF5A551E6A6C0A00B3068A /* Debug */,
+				7BDF5A561E6A6C0A00B3068A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BDF5A571E6A6C0A00B3068A /* Build configuration list for PBXNativeTarget "3DWheelImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BDF5A581E6A6C0A00B3068A /* Debug */,
+				7BDF5A591E6A6C0A00B3068A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BDF5A5A1E6A6C0A00B3068A /* Build configuration list for PBXNativeTarget "3DWheelImageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BDF5A5B1E6A6C0A00B3068A /* Debug */,
+				7BDF5A5C1E6A6C0A00B3068A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BDF5A1F1E6A6C0900B3068A /* Project object */;
+}
