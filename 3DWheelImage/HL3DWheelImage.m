@@ -7,10 +7,9 @@
 //
 
 #import "HL3DWheelImage.h"
-//#import "HLScrollView.h"
 #import "HLImageView.h"
+//#import "UIImageView+WebCache.h"
 
-#define imgCount 5 // 图片个数
 
 @interface HL3DWheelImage ()<UIScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView *imageWheel;
@@ -19,6 +18,10 @@
 
 @property (nonatomic, assign) CGFloat w;
 @property (nonatomic, assign) CGFloat h;
+
+@property (nonatomic, strong) NSTimer *scroTimer;
+
+@property (nonatomic, assign) int imgIndex;
 
 @end
 
@@ -29,29 +32,84 @@
     if (self) {
         
         _w = frame.size.width;
-        _h = _w / 2.0;
+        _h = frame.size.height;
         
-        _imageWheel = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, _w, _w)];
-        _imageWheel.contentSize = CGSizeMake(_w * (imgCount + 2), _h);
+        UIImageView *backImg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, _w, _h)];
+        backImg.image = [UIImage imageNamed:@"AD_background"];
+        [self addSubview:backImg];
+        
+        _imageWheel = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, _w, _h)];
         _imageWheel.pagingEnabled = YES;
-        _imageWheel.backgroundColor = [UIColor grayColor];
-        _imageWheel.delegate = self;
+        _imageWheel.showsHorizontalScrollIndicator = NO;
+        _imageWheel.backgroundColor = [UIColor clearColor];
+        //        _imageWheel.layer.shadowColor = BLACK_TEXT_COLOR.CGColor;
+        //        _imageWheel.layer.shadowOffset = CGSizeMake(0, 0);
+        //        _imageWheel.layer.shadowOpacity = 5.0;
+        //        _imageWheel.layer.shadowRadius = 7.0;
         [self addSubview:_imageWheel];
         
         _imgViews = [NSMutableArray array];
         
+        _pC = [[UIPageControl alloc] initWithFrame:CGRectMake(0, _h - 20, _w, 20)];
+        _pC.currentPageIndicatorTintColor = [UIColor redColor];
+        _pC.pageIndicatorTintColor = [UIColor whiteColor];
+        [self addSubview:_pC];
         
+    }
+    return self;
+}
+
+- (void)startAni {
+    if (!_scroTimer) {
         
-        for (int i = 0; i < imgCount + 2; i++) {
-            HLImageView *image = [[HLImageView alloc] initWithFrame:CGRectMake(_w * i, 0, _w, _h * 2)];
+        _scroTimer = [NSTimer timerWithTimeInterval:4.0 target:self selector:@selector(runPage)userInfo:nil repeats:YES];
+        
+        [[NSRunLoop  currentRunLoop] addTimer:_scroTimer forMode:NSDefaultRunLoopMode];
+    }
+}
+
+- (void)stopAni {
+    if (_scroTimer) {
+        [_scroTimer invalidate];
+        _scroTimer = nil;
+    }
+}
+
+- (void)setImagesArr:(NSMutableArray *)imagesArr {
+    
+    _imagesArr = imagesArr;
+    
+    if (_imagesArr.count != 0) {
+        
+        _pC.numberOfPages = imagesArr.count;
+        
+        for (HLImageView *removeImg in _imgViews) {
+            [removeImg removeFromSuperview];
+        }
+        
+        [_imgViews removeAllObjects];
+        
+        _imageWheel.delegate = self;
+        
+        __weak __typeof(self) weakSelf = self;
+        for (int i = 0; i < _imagesArr.count + 2; i++) {
+            HLImageView *image = [[HLImageView alloc] initWithFrame:CGRectMake(_w * i, 0, _w, _h)];
+            image.tapClickBlock = ^(HL3DWheelModel *model) {
+                if (weakSelf.tapImgBlock) {
+                    weakSelf.tapImgBlock(model);
+                }
+            };
             if (i == 0) {
-                image.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d",imgCount]];
-            } else if (i == imgCount + 1) {
-                image.image = [UIImage imageNamed:@"1"];
+                HL3DWheelModel *model = _imagesArr[_imagesArr.count - 1];
+                image.model = model;
+            } else if (i == _imagesArr.count + 1) {
+                HL3DWheelModel *model = _imagesArr[0];
+                image.model = model;
             } else {
-                image.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d",i]];
+                HL3DWheelModel *model = _imagesArr[i - 1];
+                image.model = model;
             }
-            if (i != 1 && i != imgCount) {
+            if (i != 1 && i != _imagesArr.count) {
                 CATransform3D transform = CATransform3DIdentity;
                 CGFloat angle = M_PI_2;
                 image.layer.anchorPoint = CGPointMake(1, 0.5);
@@ -63,10 +121,29 @@
             [_imageWheel addSubview:image];
         }
         
+        _imageWheel.contentSize = CGSizeMake(_w * (_imagesArr.count + 2), _h);
+        
         _imageWheel.contentOffset = CGPointMake(_w, 0);
         
+        [self startAni];
     }
-    return self;
+}
+
+- (void)runPage {
+    
+    _imgIndex++;
+    
+    if (_imgIndex == _imagesArr.count) {
+        _imgIndex = 0;
+    }
+    
+    if (_imgIndex != 0) {
+        
+        [_imageWheel scrollRectToVisible:CGRectMake(_w * (_imgIndex + 1), 0, _w, _h) animated:YES];
+        
+    } else {
+        [_imageWheel scrollRectToVisible:CGRectMake(_w * (_imagesArr.count + 1), 0, _w, _h) animated:YES];
+    }
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
@@ -103,10 +180,13 @@
         
         img1.layer.transform = CATransform3DRotate(transform1, -angle1, 0, 1, 0);
         
+        _pC.currentPage = (int)(c - 1);
+        _imgIndex = (int)_pC.currentPage;
         
-        NSLog(@"===========:%f--------:%f=========:%f",scrollView.contentOffset.x,c,value);
+        //        [_imageWheel bringSubviewToFront:img1];
+        
+        //        HLOG(@"--------------:%f========:%f",scrollView.contentOffset.x,_w * c)
     }
-    
     
     if (scrollView.contentOffset.x == _w * (_imgViews.count - 1)) {
         
@@ -116,11 +196,12 @@
         scrollView.contentOffset = CGPointMake(_w, 0);
     } else if (scrollView.contentOffset.x == 0) {
         
-        HLImageView *lastImg = (HLImageView *)_imgViews[imgCount];
+        HLImageView *lastImg = (HLImageView *)_imgViews[_imagesArr.count];
         lastImg.layer.transform = CATransform3DIdentity;
         
-        scrollView.contentOffset = CGPointMake(_w * imgCount, 0);
+        scrollView.contentOffset = CGPointMake(_w * _imagesArr.count, 0);
     }
+    
 }
 
 

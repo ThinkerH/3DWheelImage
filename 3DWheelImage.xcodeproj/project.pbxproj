@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B5ABB721E6D96E3002ACDA7 /* HL3DWheelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B5ABB711E6D96E3002ACDA7 /* HL3DWheelModel.m */; };
 		7BDF5A2C1E6A6C0A00B3068A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF5A2B1E6A6C0A00B3068A /* main.m */; };
 		7BDF5A2F1E6A6C0A00B3068A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF5A2E1E6A6C0A00B3068A /* AppDelegate.m */; };
 		7BDF5A321E6A6C0A00B3068A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF5A311E6A6C0A00B3068A /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B5ABB701E6D96E3002ACDA7 /* HL3DWheelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HL3DWheelModel.h; sourceTree = "<group>"; };
+		7B5ABB711E6D96E3002ACDA7 /* HL3DWheelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HL3DWheelModel.m; sourceTree = "<group>"; };
 		7BDF5A271E6A6C0A00B3068A /* 3DWheelImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 3DWheelImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BDF5A2B1E6A6C0A00B3068A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7BDF5A2D1E6A6C0A00B3068A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				7BDF5A5F1E6A6CC100B3068A /* HL3DWheelImage.m */,
 				7BDF5A681E6A7A6000B3068A /* HLImageView.h */,
 				7BDF5A691E6A7A6000B3068A /* HLImageView.m */,
+				7B5ABB701E6D96E3002ACDA7 /* HL3DWheelModel.h */,
+				7B5ABB711E6D96E3002ACDA7 /* HL3DWheelModel.m */,
 				7BDF5A331E6A6C0A00B3068A /* Main.storyboard */,
 				7BDF5A361E6A6C0A00B3068A /* Assets.xcassets */,
 				7BDF5A381E6A6C0A00B3068A /* LaunchScreen.storyboard */,
@@ -288,6 +293,7 @@
 			files = (
 				7BDF5A6A1E6A7A6000B3068A /* HLImageView.m in Sources */,
 				7BDF5A321E6A6C0A00B3068A /* ViewController.m in Sources */,
+				7B5ABB721E6D96E3002ACDA7 /* HL3DWheelModel.m in Sources */,
 				7BDF5A2F1E6A6C0A00B3068A /* AppDelegate.m in Sources */,
 				7BDF5A601E6A6CC100B3068A /* HL3DWheelImage.m in Sources */,
 				7BDF5A2C1E6A6C0A00B3068A /* main.m in Sources */,

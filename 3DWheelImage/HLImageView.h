@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HL3DWheelModel.h"
+
+typedef void(^TapClickImgBlock)(HL3DWheelModel *model);
 
 @interface HLImageView : UIView
-@property (nonatomic, strong) UIImage *image;
 @property (nonatomic, assign) CGPoint posiP;
+@property (nonatomic, strong) HL3DWheelModel *model;
+
+@property (nonatomic, copy) TapClickImgBlock tapClickBlock;
+
 @end

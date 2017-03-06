@@ -7,6 +7,7 @@
 //
 
 #import "HLImageView.h"
+//#import "UIImageView+WebCache.h"
 
 @interface HLImageView ()
 @property (nonatomic, strong) UIImageView *imgView;
@@ -36,13 +37,23 @@
         repL.instanceBlueOffset -= 0.5;
         repL.instanceAlphaOffset -= 0.5;
         
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClickAction)];
+        [_imgView addGestureRecognizer:tap];
     }
     return self;
 }
 
-- (void)setImage:(UIImage *)image {
-    _image = image;
-    _imgView.image = image;
+- (void)tapClickAction {
+    if (_tapClickBlock) {
+        _tapClickBlock(_model);
+    }
+}
+
+- (void)setModel:(HL3DWheelModel *)model {
+    _model = model;
+    _imgView.image = [UIImage imageNamed:model.imgUrl];
+//    [_imgView sd_setImageWithURL:[NSURL URLWithString:model.imgUrl]];
 }
 
 //返回当前layer的类型
